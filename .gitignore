@@ -1,6 +1,4 @@
 node_modules
-public/**/*.html
-public/**/*.css
-public/**/*.js
-
-!build.js
+.cache/
+dist/
+public/

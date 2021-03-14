@@ -4,17 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node build.js",
-    "watch": "node build.js --watch --dev",
-    "serve": "live-server --no-browser --port=8080 ./public"
+    "prebuild": "rm -rf public",
+    "build": "parcel build --out-dir public src/*.html",
+    "preserve": "rm -rf dist",
+    "serve": "parcel serve --port 8080 src/*.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "esbuild": "0.9.2",
-    "esbuild-plugin-less": "1.0.2",
-    "live-server": "1.2.1",
-    "md5-file": "5.0.0"
+    "parcel-bundler": "1.12.3"
   }
 }

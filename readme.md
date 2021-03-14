@@ -1,6 +1,6 @@
 # Aspirity landing template
 
-Uses `esbuild` for builds and `live-server` to serve files locally with live reload.
+Built with `parcel`
 
 ## Development
 
@@ -9,18 +9,13 @@ Install dependencies
 npm install
 ```
 
-Start build watcher
-```bash
-npm run watch
-```
-
-Start live server
+Start dev server
 ```bash
 npm run serve
 ```
 
 Open http://localhost:8080
-Make changes in `src` folder, page reloads automatically.
+Make changes in `src` folder, HMR is enabled.
 
 ## Production build
 
