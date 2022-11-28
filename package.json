@@ -2,17 +2,17 @@
   "name": "landing-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "prebuild": "rm -rf public",
-    "build": "parcel build --out-dir public src/*.html",
+    "build": "parcel build --dist-dir public src/*.html",
     "preserve": "rm -rf dist",
-    "serve": "parcel serve --port 8080 src/*.html"
+    "serve": "parcel --port 8080 src/*.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "1.12.3"
+    "@parcel/transformer-less": "^2.8.0",
+    "parcel": "2.8.0"
   }
 }
